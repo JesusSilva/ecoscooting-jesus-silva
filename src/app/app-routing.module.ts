@@ -8,12 +8,10 @@ const routes: Routes = [
   {
     path: '',
     component: CountriesListComponent,
-    children: [
-      {
-        path: 'detail/:id',
-        component: CountryDetailsComponent
-      }
-    ]
+  },
+  {
+    path: 'detail/:alpha3Code',
+    component: CountryDetailsComponent
   }
 ];
 
