@@ -1,0 +1,58 @@
+.content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+
+  .mat-card {
+    width: 80%;
+  }
+
+  .container {
+    height: 566px;
+    overflow: auto;
+    background-color: white;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  tr:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+
+  thead:hover {
+    background-color: white;
+  }
+
+  td, th {
+    width: 25%;
+    height: 50px;
+  }
+
+  mat-header-row {
+    border-bottom: 1px solid gray;
+  }
+
+  mat-paginator {
+    border-top: 1px solid gray;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
