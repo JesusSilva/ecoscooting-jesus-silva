@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  mat-card {
+    max-width: 400px;
+    mat-card-actions {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

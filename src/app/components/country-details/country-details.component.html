@@ -1,3 +1,21 @@
-<p>
-  country-details works!
-</p>
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{country.name}}</mat-card-title>
+      <mat-card-subtitle>{{country.alpha3Code}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="country.flag" alt="Bandera">
+    <mat-card-content>
+      <p>Capital: {{country.capital}}</p>
+      <p>Región: {{country.region}}</p>
+      <p>Sub-Región: {{country.subregion}}</p>
+      <p>Población: {{country.population}}</p>
+      <p>Monedas: <span *ngFor="let currency of country.currencies">{{currency.name}}</span></p>
+      <p>Idiomas: <span *ngFor="let language of country.languages">{{language.name}}, </span></p>
+      <p>Zonas Horarias: <span *ngFor="let timezone of country.timezones">{{timezone}}, </span></p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="goBack()">Volver</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
